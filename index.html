@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array Destructuring</title>
+</head>
+<body>
+  <h2>Array Destructuring Demo</h2>
+  <button onclick="showValues()">Show Values</button>
+  <p id="result"></p>
+
+  <script>
+    function showValues() {
+      const fruits = ["🍎 Apple", "🍌 Banana", "🍇 Grape"];
+
+      // Destructuring array into variables
+      const [first, second, third] = fruits;
+
+      document.getElementById("result").innerText = 
+        `First: ${first}, Second: ${second}, Third: ${third}`;
+    }
+  </script>
+</body>
+</html>
